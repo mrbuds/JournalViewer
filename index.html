@@ -6,18 +6,23 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 		<link rel="manifest" href="site.webmanifest">
+		<link rel="stylesheet" type="text/css" href="css/dark.css">
+		<link rel="stylesheet" title="lightMode" type="text/css" href="css/light.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script src="//wow.zamimg.com/widgets/power.js"></script>
+		<script src="js/diff_match_patch.min.js"></script>
 	</head>
 	<body>
-		<div id="login">
-			<div id="login-alert">You entered the wrong password</div>
-			<div id="login-content">
-				<h1>You need a password to continue</h1>
-				<input id="login-password" type="password" placeholder="password">
-				<button id="login-button" type="button">Continue</button>
-			</div>
+		<select id="difficulty"></select>
+		<select id="version"></select>
+		<input type="checkbox" id="themeMode"><label for="themeMode"></label>
+		<input type="checkbox" id="diffMode"><label for="diffMode"></label>
+		<div id="container">
+			<div class="tabbed"></div>
 		</div>
-		<link rel="stylesheet" type="text/css" href="css/login.css">
-		<script src="//cdnjs.cloudflare.com/ajax/libs/js-sha1/0.6.0/sha1.min.js"></script>
-		<script src="js/login.js"></script>
+		<div id="loading">
+			Loading...
+		</div>
+		<script src="js/index.js"></script>
 	</body>
 </html>
